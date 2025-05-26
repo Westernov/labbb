@@ -351,6 +351,7 @@ class DatabaseManager:
 
 class Application:
     def __init__(self, root):
+        self.visible_columns = visible_columns
         self.root = root
         self.db = DatabaseManager()
         self.current_table = None
